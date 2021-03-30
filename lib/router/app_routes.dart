@@ -1,5 +1,5 @@
 import 'package:fluro/fluro.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_kborid_package/widget/not_found_page.dart';
 
 enum AppRoutesHandlerType {
@@ -10,7 +10,7 @@ enum AppRoutesHandlerType {
 typedef Widget AppRoutesHandlerFunc(BuildContext context, Map<String, List<String>> parameters);
 
 class AppRoutes {
-  static Router get router => Router.appRouter;
+  static FluroRouter get router => FluroRouter.appRouter;
   static final rootPage = Navigator.defaultRouteName;
 
   static final Handler _defaultHandler = Handler(
